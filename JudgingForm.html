@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Judging Form</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+</head>
+
+<body class="container mt-4">
+
+    <h2 class="text-center">Judging Form</h2>
+
+    <form id="judgingForm">
+
+        <div class="mb-3">
+
+            <label class="form-label">Desk No:</label>
+
+            <input type="text" class="form-control" name="desk_no" required>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label class="form-label">Project Name:</label>
+
+            <input type="text" class="form-control" name="project_name" required>
+
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Category:</label>
+            <select class="form-control" name="category" required>
+                <option value="Scratch">Scratch</option>
+                <option value="Games">Games</option>
+                <option value="Web">Web</option>
+                <option value="Mobile Apps">Mobile Apps</option>
+                <option value="Hardware">Hardware</option>
+                <option value="Advanced Programming">Advanced Programming</option>
+                <option value="AI">AI</option>
+            </select>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label class="form-label">Team:</label>
+
+            <input type="text" class="form-control" name="team">
+
+        </div>
+
+        <div class="mb-3">
+
+            <label class="form-label">Judge's Name:</label>
+
+            <input type="text" class="form-control" name="judge_name" required>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label class="form-label">Coolness (1-10):</label>
+
+            <input type="number" class="form-control" name="coolness" min="1" max="10" required>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label class="form-label">Complexity (1-10):</label>
+
+            <input type="number" class="form-control" name="complexity" min="1" max="10" required>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label class="form-label">Presentation (1-10):</label>
+
+            <input type="number" class="form-control" name="presentation" min="1" max="10" required>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label class="form-label">Design & Usability (1-10):</label>
+
+            <input type="number" class="form-control" name="design" min="1" max="10" required>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label class="form-label">Comments:</label>
+
+            <textarea class="form-control" name="comments"></textarea>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+    <script>
+
+        document.getElementById("judgingForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+
+            fetch("https://script.google.com/macros/s/AKfycbyfv2wLV2dZI97p9_53CZKibHgUkW1Al7cG6QTL6f2WlwSGuHvHSdOA45MPJNAezXTmsA/exec", {
+
+                method: "POST",
+
+                body: formData
+
+            }).then(response => response.json()).then(data => {
+
+                alert("Judging form submitted successfully!");
+
+                event.target.reset();
+
+            }).catch(error => {
+
+                alert("Error submitting form");
+
+                console.error(error);
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
