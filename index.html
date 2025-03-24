@@ -76,16 +76,17 @@
 
         document.getElementById("desk_no").addEventListener("change", function() {
             let selectedDesk = this.value;
+            console.log("Selected Desk Data:", deskData[selectedDesk]); // Debugging log
             if (selectedDesk in deskData) {
-                document.getElementById("project_name").value = deskData[selectedDesk].project_name;
-                document.getElementById("category").value = deskData[selectedDesk].category;
-                document.getElementById("team").value = deskData[selectedDesk].team;
-                document.getElementById("judge_name").value = deskData[selectedDesk].judge_name;
+                document.getElementById("project_name").value = deskData[selectedDesk].project_name || "";
+                document.getElementById("category").value = deskData[selectedDesk].category || "";
+                document.getElementById("team").value = deskData[selectedDesk].team || "";
+                document.getElementById("judge_name").value = deskData[selectedDesk].judge_name || "No judge assigned";
             } else {
                 document.getElementById("project_name").value = "";
                 document.getElementById("category").value = "";
                 document.getElementById("team").value = "";
-                document.getElementById("judge_name").value = "";
+                document.getElementById("judge_name").value = "No judge assigned";
             }
         });
 
