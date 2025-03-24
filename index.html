@@ -77,11 +77,19 @@
         document.getElementById("desk_no").addEventListener("change", function() {
             let selectedDesk = this.value;
             console.log("Selected Desk Data:", deskData[selectedDesk]); // Debugging log
+            
             if (selectedDesk in deskData) {
                 document.getElementById("project_name").value = deskData[selectedDesk].project_name || "";
                 document.getElementById("category").value = deskData[selectedDesk].category || "";
                 document.getElementById("team").value = deskData[selectedDesk].team || "";
-                document.getElementById("judge_name").value = deskData[selectedDesk].judge_name || "No judge assigned";
+                
+                // Check if judge_name exists
+                if (deskData[selectedDesk].judge_name) {
+                    document.getElementById("judge_name").value = deskData[selectedDesk].judge_name;
+                } else {
+                    document.getElementById("judge_name").value = "No judge assigned";
+                    console.warn("Judge's name is missing for desk:", selectedDesk);
+                }
             } else {
                 document.getElementById("project_name").value = "";
                 document.getElementById("category").value = "";
@@ -89,6 +97,7 @@
                 document.getElementById("judge_name").value = "No judge assigned";
             }
         });
+
 
         document.getElementById("judgingForm").addEventListener("submit", function(event) {
             event.preventDefault();
