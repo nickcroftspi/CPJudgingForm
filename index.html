@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
 </head>
 <body class="container mt-4">
-    <h2 class="text-center">Coolest Projects Judging Form</h2>
+    <h2 class="text-center">Coolest Projects Judging Form!</h2>
     <form id="judgingForm">
         <div class="mb-3">
             <label class="form-label">Desk No:</label>
@@ -104,7 +104,7 @@
         document.getElementById("judgingForm").addEventListener("submit", function(event) {
             event.preventDefault();
             const formData = new FormData(event.target);
-            fetch("https://script.google.com/macros/s/AKfycbzGJWBX9a_sBHqBBVTA7I3LqP32Q2PxW6YVRWWYlXyPF0AdQ7xFdSysMQO8uqkGFZQuvg/exec", {
+            fetch("https://script.google.com/macros/s/AKfycbyfv2wLV2dZI97p9_53CZKibHgUkW1Al7cG6QTL6f2WlwSGuHvHSdOA45MPJNAezXTmsA/exec", {
                 method: "POST",
                 body: formData
             }).then(response => response.json()).then(data => {
