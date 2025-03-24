@@ -85,7 +85,7 @@
                 
                 // Check if judge_name exists
                 if (deskData[selectedDesk].judge_name) {
-                    document.getElementById("judge_name").value = deskData[selectedDesk].judge_name;
+                    document.getElementById("judge_name").value = deskData[selectedDesk].judge_name || "";
                 } else {
                     document.getElementById("judge_name").value = "No judge assigned";
                     console.warn("Judge's name is missing for desk:", selectedDesk);
