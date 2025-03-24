@@ -77,19 +77,20 @@
         document.getElementById("desk_no").addEventListener("change", function() {
             let selectedDesk = this.value;
             console.log("Selected Desk Data:", deskData[selectedDesk]); // Debugging log
-            
+        
             if (selectedDesk in deskData) {
                 document.getElementById("project_name").value = deskData[selectedDesk].project_name || "";
                 document.getElementById("category").value = deskData[selectedDesk].category || "";
                 document.getElementById("team").value = deskData[selectedDesk].team || "";
-                document.getElementById("judge_name").value = deskData[selectedDesk].judge_name || "";
-                // Check if judge_name exists
- //               if (deskData[selectedDesk].judge_name) {
-   //                 document.getElementById("judge_name").value = deskData[selectedDesk].judge_name || "";
-     //           } else {
-       //             document.getElementById("judge_name").value = "No judge assigned";
-         //           console.warn("Oh No! Judge's name is missing for desk:", selectedDesk);
-           //     }
+                
+                // Debugging: Check if judge_name exists
+                if (deskData[selectedDesk].judge_name !== undefined) {
+                    console.log("Judge's Name Found:", deskData[selectedDesk].judge_name);
+                    document.getElementById("judge_name").value = deskData[selectedDesk].judge_name;
+                } else {
+                    console.warn("No judge assigned for desk:", selectedDesk);
+                    document.getElementById("judge_name").value = "No judge assigned";
+                }
             } else {
                 document.getElementById("project_name").value = "";
                 document.getElementById("category").value = "";
@@ -97,6 +98,7 @@
                 document.getElementById("judge_name").value = "No judge assigned";
             }
         });
+
 
 
         document.getElementById("judgingForm").addEventListener("submit", function(event) {
