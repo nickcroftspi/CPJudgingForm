@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Judging Form</title>
+    <title>Coolest Projects Judging Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
 </head>
@@ -82,14 +82,14 @@
                 document.getElementById("project_name").value = deskData[selectedDesk].project_name || "";
                 document.getElementById("category").value = deskData[selectedDesk].category || "";
                 document.getElementById("team").value = deskData[selectedDesk].team || "";
-                
+                document.getElementById("judge_name").value = deskData[selectedDesk].judge_name || "";
                 // Check if judge_name exists
-                if (deskData[selectedDesk].judge_name) {
-                    document.getElementById("judge_name").value = deskData[selectedDesk].judge_name || "";
-                } else {
-                    document.getElementById("judge_name").value = "No judge assigned";
-                    console.warn("Oh No! Judge's name is missing for desk:", selectedDesk);
-                }
+ //               if (deskData[selectedDesk].judge_name) {
+   //                 document.getElementById("judge_name").value = deskData[selectedDesk].judge_name || "";
+     //           } else {
+       //             document.getElementById("judge_name").value = "No judge assigned";
+         //           console.warn("Oh No! Judge's name is missing for desk:", selectedDesk);
+           //     }
             } else {
                 document.getElementById("project_name").value = "";
                 document.getElementById("category").value = "";
