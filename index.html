@@ -61,18 +61,16 @@
             <textarea class="form-control" name="comments"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
     </form>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
     <script>
         let deskData = {};
 
-        // DESK DATA (GET)
         const deskDataUrl = "https://script.google.com/macros/s/AKfycbxuRytcCyrRkxweTZBqvrDQ3qUrXCnyCM4URrTLn03Zk7C4vyU35MuJbxLSfjhSD6MR/exec";
-
-        // FORM SUBMISSION (POST)
         const submitUrl = "https://script.google.com/macros/s/AKfycbyfv2wLV2dZI97p9_53CZKibHgUkW1Al7cG6QTL6f2WlwSGuHvHSdOA45MPJNAezXTmsA/exec";
-
 
         function loadDeskData() {
             fetch(deskDataUrl)
@@ -80,11 +78,10 @@
                 .then(data => {
                     deskData = data;
                     const deskSelect = document.getElementById("desk_no");
-
                     deskSelect.innerHTML = '<option value="">Select Desk</option>';
 
-                    Object.keys(deskData).sort((a, b) => a - b).forEach(desk => {
-                        let option = document.createElement("option");
+                    Object.keys(deskData).sort((a, b) => Number(a) - Number(b)).forEach(desk => {
+                        const option = document.createElement("option");
                         option.value = desk;
                         option.textContent = "Desk " + desk;
                         deskSelect.appendChild(option);
@@ -96,58 +93,48 @@
                 });
         }
 
-
         document.getElementById("desk_no").addEventListener("change", function() {
-            let selectedDesk = this.value;
+            const selectedDesk = this.value;
 
             if (selectedDesk in deskData) {
                 document.getElementById("project_name").value = deskData[selectedDesk].project_name || "";
                 document.getElementById("category").value = deskData[selectedDesk].category || "";
                 document.getElementById("team").value = deskData[selectedDesk].team || "";
                 document.getElementById("judge_name").value = deskData[selectedDesk].judge_name || "";
+            } else {
+                document.getElementById("project_name").value = "";
+                document.getElementById("category").value = "";
+                document.getElementById("team").value = "";
+                document.getElementById("judge_name").value = "";
             }
         });
 
-
         document.getElementById("judgingForm").addEventListener("submit", function(event) {
             event.preventDefault();
-            const formData = new FormData(event.target);
 
-            fetch(submitUrl, {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.text())
-            .then(text => {
-                console.log("Submission response:", text);
+            const form = event.target;
+            const submitButton = document.getElementById("submitButton");
 
-                let data;
-                try {
-                    data = JSON.parse(text);
-                } catch (err) {
-                    throw new Error("Invalid response: " + text);
-                }
+            submitButton.disabled = true;
+            submitButton.textContent = "Submitting...";
 
-                if (data.result === "success") {
-                    alert("Judging form submitted successfully!");
-                    event.target.reset();
+            form.action = submitUrl;
+            form.method = "POST";
+            form.target = "hidden_iframe";
 
-                    document.getElementById("project_name").value = "";
-                    document.getElementById("category").value = "";
-                    document.getElementById("team").value = "";
-                    document.getElementById("judge_name").value = "";
-                    document.getElementById("desk_no").value = "";
+            form.submit();
 
-                } else {
-                    throw new Error(data.message || "Submission failed");
-                }
-            })
-            .catch(error => {
-                alert("Error submitting form: " + error.message);
-                console.error(error);
-            });
+            setTimeout(() => {
+                alert("Judging form submitted successfully!");
+                form.reset();
+                document.getElementById("project_name").value = "";
+                document.getElementById("category").value = "";
+                document.getElementById("team").value = "";
+                document.getElementById("judge_name").value = "";
+                submitButton.disabled = false;
+                submitButton.textContent = "Submit";
+            }, 1000);
         });
-
 
         window.onload = loadDeskData;
     </script>
