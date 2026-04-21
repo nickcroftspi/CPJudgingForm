@@ -7,6 +7,7 @@
 </head>
 <body class="container mt-4">
     <h2 class="text-center">Coolest Projects Judging Form!</h2>
+
     <form id="judgingForm">
         <div class="mb-3">
             <label class="form-label">Desk No:</label>
@@ -14,56 +15,74 @@
                 <option value="">Select Desk</option>
             </select>
         </div>
+
         <div class="mb-3">
             <label class="form-label">Project Name:</label>
             <input type="text" class="form-control" name="project_name" id="project_name" readonly>
         </div>
+
         <div class="mb-3">
             <label class="form-label">Category:</label>
             <input type="text" class="form-control" name="category" id="category" readonly>
         </div>
+
         <div class="mb-3">
             <label class="form-label">Team:</label>
             <input type="text" class="form-control" name="team" id="team" readonly>
         </div>
+
         <div class="mb-3">
             <label class="form-label">Judge's Name:</label>
             <input type="text" class="form-control" name="judge_name" id="judge_name" readonly>
         </div>
+
         <div class="mb-3">
             <label class="form-label">Coolness (1-10):</label>
             <input type="number" class="form-control" name="coolness" min="1" max="10" required>
         </div>
+
         <div class="mb-3">
             <label class="form-label">Complexity (1-10):</label>
             <input type="number" class="form-control" name="complexity" min="1" max="10" required>
         </div>
+
         <div class="mb-3">
             <label class="form-label">Presentation (1-10):</label>
             <input type="number" class="form-control" name="presentation" min="1" max="10" required>
         </div>
+
         <div class="mb-3">
             <label class="form-label">Design & Usability (1-10):</label>
             <input type="number" class="form-control" name="design" min="1" max="10" required>
         </div>
+
         <div class="mb-3">
             <label class="form-label">Comments:</label>
             <textarea class="form-control" name="comments"></textarea>
         </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+
     <script>
         let deskData = {};
-        const googleScriptUrl = "https://script.google.com/macros/s/AKfycbxuRytcCyrRkxweTZBqvrDQ3qUrXCnyCM4URrTLn03Zk7C4vyU35MuJbxLSfjhSD6MR/exec";
+
+        // DESK DATA (GET)
+        const deskDataUrl = "https://script.google.com/macros/s/AKfycbxuRytcCyrRkxweTZBqvrDQ3qUrXCnyCM4URrTLn03Zk7C4vyU35MuJbxLSfjhSD6MR/exec";
+
+        // FORM SUBMISSION (POST)
+        const submitUrl = "https://script.google.com/macros/s/AKfycbyfv2wLV2dZI97p9_53CZKibHgUkW1Al7cG6QTL6f2WlwSGuHvHSdOA45MPJNAezXTmsA/exec";
+
 
         function loadDeskData() {
-            fetch(googleScriptUrl)
+            fetch(deskDataUrl)
                 .then(response => response.json())
                 .then(data => {
                     deskData = data;
-                    let deskSelect = document.getElementById("desk_no");
+                    const deskSelect = document.getElementById("desk_no");
+
                     deskSelect.innerHTML = '<option value="">Select Desk</option>';
-                    
+
                     Object.keys(deskData).sort((a, b) => a - b).forEach(desk => {
                         let option = document.createElement("option");
                         option.value = desk;
@@ -71,50 +90,64 @@
                         deskSelect.appendChild(option);
                     });
                 })
-                .catch(error => console.error("Error loading desk data:", error));
+                .catch(error => {
+                    console.error("Error loading desk data:", error);
+                    alert("Failed to load desk data");
+                });
         }
+
 
         document.getElementById("desk_no").addEventListener("change", function() {
             let selectedDesk = this.value;
-            console.log("Selected Desk Data:", deskData[selectedDesk]); // Debugging log
-        
+
             if (selectedDesk in deskData) {
                 document.getElementById("project_name").value = deskData[selectedDesk].project_name || "";
                 document.getElementById("category").value = deskData[selectedDesk].category || "";
                 document.getElementById("team").value = deskData[selectedDesk].team || "";
-                
-                // Debugging: Check if judge_name exists
-                if (deskData[selectedDesk].judge_name !== undefined) {
-                    console.log("Judge's Name Found:", deskData[selectedDesk].judge_name);
-                    document.getElementById("judge_name").value = deskData[selectedDesk].judge_name;
-                } else {
-                    console.warn("No judge assigned for desk:", selectedDesk);
-                    document.getElementById("judge_name").value = "No judge assigned";
-                }
-            } else {
-                document.getElementById("project_name").value = "";
-                document.getElementById("category").value = "";
-                document.getElementById("team").value = "";
-                document.getElementById("judge_name").value = "No judge assigned";
+                document.getElementById("judge_name").value = deskData[selectedDesk].judge_name || "";
             }
         });
-
 
 
         document.getElementById("judgingForm").addEventListener("submit", function(event) {
             event.preventDefault();
             const formData = new FormData(event.target);
-            fetch("https://script.google.com/macros/s/AKfycbyfv2wLV2dZI97p9_53CZKibHgUkW1Al7cG6QTL6f2WlwSGuHvHSdOA45MPJNAezXTmsA/exec", {
+
+            fetch(submitUrl, {
                 method: "POST",
                 body: formData
-            }).then(response => response.json()).then(data => {
-                alert("Judging form submitted successfully!");
-                event.target.reset();
-            }).catch(error => {
-                alert("Error submitting form");
+            })
+            .then(response => response.text())
+            .then(text => {
+                console.log("Submission response:", text);
+
+                let data;
+                try {
+                    data = JSON.parse(text);
+                } catch (err) {
+                    throw new Error("Invalid response: " + text);
+                }
+
+                if (data.result === "success") {
+                    alert("Judging form submitted successfully!");
+                    event.target.reset();
+
+                    document.getElementById("project_name").value = "";
+                    document.getElementById("category").value = "";
+                    document.getElementById("team").value = "";
+                    document.getElementById("judge_name").value = "";
+                    document.getElementById("desk_no").value = "";
+
+                } else {
+                    throw new Error(data.message || "Submission failed");
+                }
+            })
+            .catch(error => {
+                alert("Error submitting form: " + error.message);
                 console.error(error);
             });
         });
+
 
         window.onload = loadDeskData;
     </script>
