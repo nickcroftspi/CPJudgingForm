@@ -1,0 +1,860 @@
+{
+ "AI-01": {
+  "project_name": "Gesture Art ? Draw with Your Hand",
+  "category": "AI",
+  "team": "CHAPLE PRAGNYASHWI, ERROLLA KEERTHANA, RAMTENKI RISHWITHA",
+  "judge_name": "1"
+ },
+ "AI-02": {
+  "project_name": "Interactive HarryPorter AI Wizarding Hat & Magical Wand",
+  "category": "AI",
+  "team": "ATHARV AGARWAL, IVVAN JAIN",
+  "judge_name": "1"
+ },
+ "AI-03": {
+  "project_name": "Nuera Core AI",
+  "category": "AI",
+  "team": "CRIUS BEHERA",
+  "judge_name": "1"
+ },
+ "AI-04": {
+  "project_name": "Physical AI Robots That Can See, Move and Act",
+  "category": "AI",
+  "team": "AVYUKT JAIN, VIVAAN SARAF, AARYAV BHOTIKA",
+  "judge_name": "1"
+ },
+ "AI-05": {
+  "project_name": "SENTRA AI",
+  "category": "AI",
+  "team": "VIVAAN DUGAR, JIYA DUGAR",
+  "judge_name": "2"
+ },
+ "AI-06": {
+  "project_name": "Pi Baby Guardian",
+  "category": "AI",
+  "team": "ANSHIKA SINGH",
+  "judge_name": "2"
+ },
+ "AI-07": {
+  "project_name": "HOMESHIELD AI",
+  "category": "AI",
+  "team": "SAMUKTHA, KANISHKA, RAGAVI, NIKITHA",
+  "judge_name": "2"
+ },
+ "AI-08": {
+  "project_name": "DrainGuard ? The Self-Cleaning Drain",
+  "category": "AI",
+  "team": "YUVADHARSHINI, WAJEEHA, DANSHIKA",
+  "judge_name": "2"
+ },
+ "AI-09": {
+  "project_name": "Smart language translator",
+  "category": "AI",
+  "team": "SIDDHARTH",
+  "judge_name": "3"
+ },
+ "AI-10": {
+  "project_name": "PYTHON PROJECT",
+  "category": "AI",
+  "team": "B AKHILA, B SHRANYA DEVI, G MYTHILI",
+  "judge_name": "3"
+ },
+ "AI-11": {
+  "project_name": "AI-Enabled Activity Tracking, Analytics & Digital Archive for Colleges",
+  "category": "AI",
+  "team": "K INDRANI, K NAYANASRI, K NANDINI",
+  "judge_name": "3"
+ },
+ "AI-12": {
+  "project_name": "Sign-to-Text with RPi",
+  "category": "AI",
+  "team": "VIREN",
+  "judge_name": "3"
+ },
+ "AI-13": {
+  "project_name": "Tree Safety System",
+  "category": "AI",
+  "team": "LAVIDH, PRATHAM, SHASHWAT, BHAVYA, GIA",
+  "judge_name": "4"
+ },
+ "AI-14": {
+  "project_name": "Air Music",
+  "category": "AI",
+  "team": "DIVYANA",
+  "judge_name": "4"
+ },
+ "AI-15": {
+  "project_name": "RPi Talk",
+  "category": "AI",
+  "team": "HANSIKA SHAKTAWAT",
+  "judge_name": "4"
+ },
+ "AI-16": {
+  "project_name": "Smell Diffuser for Farm Protection",
+  "category": "AI",
+  "team": "RAJESHEKAR",
+  "judge_name": "4"
+ },
+ "AI-17": {
+  "project_name": "DesktopMitra",
+  "category": "AI",
+  "team": "CHINTHAKUNTA HARSHIKA REDDY, DANGI AVANTHIKA, BATCHU SHUBHASRI",
+  "judge_name": "5"
+ },
+ "AI-18": {
+  "project_name": "ESP-GPT",
+  "category": "AI",
+  "team": "HIMANSHI",
+  "judge_name": "5"
+ },
+ "AI-19": {
+  "project_name": "FOCUS GUARD",
+  "category": "AI",
+  "team": "ADITI, RAZIYA",
+  "judge_name": "5"
+ },
+ "AI-20": {
+  "project_name": "Smart Helmet Detection System",
+  "category": "AI",
+  "team": "SHASHANK GOWDA P, LIKITH R.B",
+  "judge_name": "5"
+ },
+ "AI-21": {
+  "project_name": "FloraLens",
+  "category": "AI",
+  "team": "Sreenidhi v, J Sreeja, T nandhini",
+  "judge_name": "2"
+ },
+ "AP-01": {
+  "project_name": "Crop Disease Detection System",
+  "category": "Advanced Programming",
+  "team": "D VAISHNAVI, A KALPANA",
+  "judge_name": "4"
+ },
+ "AP-02": {
+  "project_name": "Students marks calculator",
+  "category": "Advanced Programming",
+  "team": "POTHURAJU ARAVINDH, MUNDKAR HANMANTHRAO, DHODLA SRAVANKUMAR, WAGMARE SAVAN, VENDI ABHISHEK",
+  "judge_name": "5"
+ },
+ "AP-03": {
+  "project_name": "RPi- Data Station",
+  "category": "Advanced Programming",
+  "team": "VANSHIKA TANWAR",
+  "judge_name": "5"
+ },
+ "AP-04": {
+  "project_name": "Mini Satellite- with RPi",
+  "category": "Advanced Programming",
+  "team": "AARTI KUSHAWAH",
+  "judge_name": "5"
+ },
+ "AP-05": {
+  "project_name": "SignSpeak",
+  "category": "Advanced Programming",
+  "team": "JASHWITHA A, SREESHMA K, VARSHA P, SAVITHA HASDE",
+  "judge_name": "5"
+ },
+ "AP-06": {
+  "project_name": "FruitKeys",
+  "category": "Advanced Programming",
+  "team": "VHEDHYA J, TANVI CH, BHAVANI G, SAMEEKSHA R",
+  "judge_name": "6"
+ },
+ "AP-07": {
+  "project_name": "Results Portal",
+  "category": "Advanced Programming",
+  "team": "B MADHUMATHI, M PRANAVI, R ASHMITHA, S MALLESHWARI",
+  "judge_name": "6"
+ },
+ "AP-08": {
+  "project_name": "Space Rover",
+  "category": "Advanced Programming",
+  "team": "HARSH SUTHAR",
+  "judge_name": "6"
+ },
+ "AP-09": {
+  "project_name": "Girls Safety SOS Device",
+  "category": "Advanced Programming",
+  "team": "BHAVIKA JANGIR",
+  "judge_name": "6"
+ },
+ "AP-10": {
+  "project_name": "Smart landslide prediction system",
+  "category": "Advanced Programming",
+  "team": "ADITYA ABHINAV A.T, VASUDEV SREERAJ, GAUTHAM KRISHNA.P, SREEHARI.S",
+  "judge_name": "7"
+ },
+ "AP-11": {
+  "project_name": "SCHOOL MANAGEMENT SYSYTEM",
+  "category": "Advanced Programming",
+  "team": "VADATHYA RAHUL, MULKALLA HARIHANTH KUMAR, NALIKA SAHAN, NARGUNDE SAMRAT",
+  "judge_name": "7"
+ },
+ "AP-12": {
+  "project_name": "Online Quiz Application",
+  "category": "Advanced Programming",
+  "team": "MD ANJUM, DEEPIKA, K.NANDINI, Y.VYSHNAVI",
+  "judge_name": "7"
+ },
+ "AP-13": {
+  "project_name": "Smart Farming Decision Support System Using Python",
+  "category": "Advanced Programming",
+  "team": "MEGHAVATH DHASHARATH, GANJI LAXMAN, BAYYAPU GAGAN KIRAN",
+  "judge_name": "7"
+ },
+ "GAM-01": {
+  "project_name": "ESP powered Gamepad",
+  "category": "Games",
+  "team": "SUMIT PRAJAPAT",
+  "judge_name": "2"
+ },
+ "GAM-02": {
+  "project_name": "An Endless Drive",
+  "category": "Games",
+  "team": "TARUN",
+  "judge_name": "1"
+ },
+ "GAM-03": {
+  "project_name": "Spin N? Slam",
+  "category": "Games",
+  "team": "FINOSHA ANTONIA",
+  "judge_name": "1"
+ },
+ "GAM-04": {
+  "project_name": "Chrome Dino In Real Life(IRL)",
+  "category": "Games",
+  "team": "SRISHTI PODDAR, KIMAYA JAIN",
+  "judge_name": "2"
+ },
+ "GAM-05": {
+  "project_name": "Pager",
+  "category": "Games",
+  "team": "MINAL VERMA",
+  "judge_name": "2"
+ },
+ "GAM-06": {
+  "project_name": "Air Fighter game",
+  "category": "Games",
+  "team": "R SAI KIRAN, S ESHWAR, R PAVAN, R JITHENDAR",
+  "judge_name": "2"
+ },
+ "HAR-01": {
+  "project_name": "All-in-One Vital Monitor",
+  "category": "Hardware",
+  "team": "MADHU KRISHNA (SL), MANI, VAISHNAVI, VEEKSHITHA",
+  "judge_name": "8"
+ },
+ "HAR-02": {
+  "project_name": "Grizzly KineticCare AI: Dual-Brain Edge Rehab Assistant",
+  "category": "Hardware",
+  "team": "KUMARI SHAMBHAVI, BHOOMIKA RAJ SHARMA, SHAURYA GUPTA",
+  "judge_name": "8"
+ },
+ "HAR-03": {
+  "project_name": "FER-26: An Automated Fire-Extinguishing Robot",
+  "category": "Hardware",
+  "team": "MEDHA BHAT, MANVI KAJE, PRANAMYA J, SUDIKSHA S BHAT, ARADHANA B",
+  "judge_name": "8"
+ },
+ "HAR-04": {
+  "project_name": "Sentry-Robo Dog",
+  "category": "Hardware",
+  "team": "SUHANI, SHIRISHA, ANUSHA, JAGRUTHI",
+  "judge_name": "8"
+ },
+ "HAR-05": {
+  "project_name": "Air Shooter (Makey Makey)",
+  "category": "Hardware",
+  "team": "MOULKAR KARTHIK, KAMBLE VANDANKUMAR",
+  "judge_name": "9"
+ },
+ "HAR-06": {
+  "project_name": "6 - AXIS VISION ROBO ARM",
+  "category": "Hardware",
+  "team": "MAMATHA, SATHWIKA, ROOPASRI",
+  "judge_name": "9"
+ },
+ "HAR-07": {
+  "project_name": "Smart drip holder",
+  "category": "Hardware",
+  "team": "MONIKA MEGHWAL",
+  "judge_name": "9"
+ },
+ "HAR-08": {
+  "project_name": "Noise Ninjas",
+  "category": "Hardware",
+  "team": "RIA, REHANSH, SUHANA, MEERA, SAMAR PRATAP",
+  "judge_name": "9"
+ },
+ "HAR-09": {
+  "project_name": "Mini CNC Plotter",
+  "category": "Hardware",
+  "team": "T. PRAFUL, R. MANOJ, RATHOD SUDHARSHAN",
+  "judge_name": "10"
+ },
+ "HAR-10": {
+  "project_name": "SUSTAINABLE ELECTRIC CYCLE WITH GEARS",
+  "category": "Hardware",
+  "team": "SHAI RISVANTH S J, SAI VARSHA S J",
+  "judge_name": "10"
+ },
+ "HAR-11": {
+  "project_name": "Fuel Fraud Detection",
+  "category": "Hardware",
+  "team": "VIVEK KUMHAR",
+  "judge_name": "10"
+ },
+ "HAR-12": {
+  "project_name": "Smart distance measuring device",
+  "category": "Hardware",
+  "team": "KAVYA TELI",
+  "judge_name": "10"
+ },
+ "HAR-13": {
+  "project_name": "Soil Health Detector",
+  "category": "Hardware",
+  "team": "DIKSHA GAYRI",
+  "judge_name": "11"
+ },
+ "HAR-14": {
+  "project_name": "PuffGuard Infant Safety Coat",
+  "category": "Hardware",
+  "team": "AMAN, RISHIKUMAR, UDAY KUMAR, AYAN",
+  "judge_name": "11"
+ },
+ "HAR-15": {
+  "project_name": "Eco friendly Smart City",
+  "category": "Hardware",
+  "team": "ANIKETH RAI, K ABHINAVA NARAYANA JOISA, SANMITH B, SAMARTHA R, DHIREN G",
+  "judge_name": "11"
+ },
+ "HAR-16": {
+  "project_name": "GasGuardian ? Smart LPG Safety System",
+  "category": "Hardware",
+  "team": "LOKESH, BHAVANA, DIVYA",
+  "judge_name": "11"
+ },
+ "HAR-17": {
+  "project_name": "hybrid atmospheric water generator",
+  "category": "Hardware",
+  "team": "VILOK V SASINDRAN",
+  "judge_name": "12"
+ },
+ "HAR-18": {
+  "project_name": "Expiry Sense",
+  "category": "Hardware",
+  "team": "THANVI SRIRAM, BHAVANI, YASHITHA G, KEERTHANA",
+  "judge_name": "12"
+ },
+ "HAR-19": {
+  "project_name": "PokeBot",
+  "category": "Hardware",
+  "team": "AVYUKT",
+  "judge_name": "12"
+ },
+ "HAR-20": {
+  "project_name": "Accident Alert SOS device",
+  "category": "Hardware",
+  "team": "CHANCHAL SAINI",
+  "judge_name": "12"
+ },
+ "HAR-21": {
+  "project_name": "Smart Air Filter",
+  "category": "Hardware",
+  "team": "NANCY SONI",
+  "judge_name": "13"
+ },
+ "HAR-22": {
+  "project_name": "SPEED DETECTOR USING HARDWARE COMPONENTS: AND SOFTWARE CODE",
+  "category": "Hardware",
+  "team": "NANDHINI, MANOGNA, PRAVALIKA, K SAHASRA, J SAIPRIYA",
+  "judge_name": "13"
+ },
+ "HAR-23": {
+  "project_name": "Waste2Reward",
+  "category": "Hardware",
+  "team": "PAYAL BISOYI, SUBHAM DASH",
+  "judge_name": "13"
+ },
+ "HAR-24": {
+  "project_name": "Smart Terrawave",
+  "category": "Hardware",
+  "team": "TEGALA VIGNESH GOUD, K. KRUTHIK REDDY, E. SRI VARDHAN",
+  "judge_name": "13"
+ },
+ "HAR-25": {
+  "project_name": "Safe Ride",
+  "category": "Hardware",
+  "team": "SAI NIREEKSHITH, PRAJWAL D.S, JAYANTH D",
+  "judge_name": "1"
+ },
+ "HAR-26": {
+  "project_name": "SMART TRAFFIC RESCUE SYSTEM",
+  "category": "Hardware",
+  "team": "ABHIJHNA VELPULA, JYOTHI DURGAM, K SAI RITHIKA",
+  "judge_name": "1"
+ },
+ "MOB-01": {
+  "project_name": "Med4U",
+  "category": "Mobile Apps",
+  "team": "SHRAVANI P L, SRISHTI M SALIAN, LAVANYA NAYAK, R K BRINDA, DRISHA SALIAN",
+  "judge_name": "6"
+ },
+ "MOB-02": {
+  "project_name": "SignBridge AI",
+  "category": "Mobile Apps",
+  "team": "REHA",
+  "judge_name": "6"
+ },
+ "MOB-03": {
+  "project_name": "Buildwit",
+  "category": "Mobile Apps",
+  "team": "KOTA ANVESH, MEESALA MAHESH",
+  "judge_name": "6"
+ },
+ "MOB-04": {
+  "project_name": "Reading Practice App",
+  "category": "Mobile Apps",
+  "team": "JHANSI ORAGANTI, KASTURI RISHITA, BYAGARI MOKSHANA",
+  "judge_name": "6"
+ },
+ "MOB-05": {
+  "project_name": "PeopleConnect",
+  "category": "Mobile Apps",
+  "team": "GATADI SEJAL, BOINWAD NEHA, KADIYALA AARADHYA",
+  "judge_name": "7"
+ },
+ "MOB-06": {
+  "project_name": "MoneySmart Kids ? Starter Edition",
+  "category": "Mobile Apps",
+  "team": "JAYANTIKA MANOJ BIDKAR, RUTURAJ RAVI PAWAR, SHOURYA BIDKAR",
+  "judge_name": "7"
+ },
+ "MOB-07": {
+  "project_name": "Food Waste to Biogas App",
+  "category": "Mobile Apps",
+  "team": "ARFAZ, SHANAWAZ, NITHIN, TEJASWINI, VISHNUVARDHAN",
+  "judge_name": "7"
+ },
+ "MOB-08": {
+  "project_name": "Smart robot Dog",
+  "category": "Mobile Apps",
+  "team": "BHAVYA BADRA",
+  "judge_name": "7"
+ },
+ "MOB-09": {
+  "project_name": "EMERGENCY CALLING APP",
+  "category": "Mobile Apps",
+  "team": "SAIDEEPTHI, INDU, AKSHARA",
+  "judge_name": "8"
+ },
+ "MOB-10": {
+  "project_name": "CAMPUS CHOW: Smart Campus Food Waste Monitoring & Optimization System",
+  "category": "Mobile Apps",
+  "team": "RADHIKA, M.RAJASREE, PRAJWALA, K.MANASA",
+  "judge_name": "8"
+ },
+ "MOB-11": {
+  "project_name": "Think Before You Click",
+  "category": "Mobile Apps",
+  "team": "SANDRA RASHMITHA, EEDHA VARSHINI, CHINTHA PALLAVI",
+  "judge_name": "8"
+ },
+ "MOB-12": {
+  "project_name": "Awareness App",
+  "category": "Mobile Apps",
+  "team": "SIDDHI",
+  "judge_name": "8"
+ },
+ "MOB-13": {
+  "project_name": "Siimr App",
+  "category": "Mobile Apps",
+  "team": "PRABODH KUMAR NAYAK",
+  "judge_name": "9"
+ },
+ "MOB-14": {
+  "project_name": "Suraksha Women Safety Alert App",
+  "category": "Mobile Apps",
+  "team": "G YOKSHANA, P DIVYA, CH SATHVIKA",
+  "judge_name": "9"
+ },
+ "MOB-15": {
+  "project_name": "Instagram Reel Reactor",
+  "category": "Mobile Apps",
+  "team": "SARANG",
+  "judge_name": "9"
+ },
+ "MOB-16": {
+  "project_name": "Second Life Scanner",
+  "category": "Mobile Apps",
+  "team": "ZUBIA KHANAM, SUMAYYA BEGUM, MD RIMSHA FIRDOSE, IQRA MAHIN, MEHAVISH",
+  "judge_name": "10"
+ },
+ "MOB-17": {
+  "project_name": "Green Quest",
+  "category": "Mobile Apps",
+  "team": "MAHEERA, ALFISHA, ADINA, SHEEZA, SALIMA",
+  "judge_name": "10"
+ },
+ "SCR-01": {
+  "project_name": "GAMEBOUND",
+  "category": "Scratch",
+  "team": "ARJUN",
+  "judge_name": "10"
+ },
+ "SCR-02": {
+  "project_name": "Why Technology matters",
+  "category": "Scratch",
+  "team": "THALALI SUDEEPTHI",
+  "judge_name": "11"
+ },
+ "SCR-03": {
+  "project_name": "INFINITY MULTIPLY MASTER MANIA",
+  "category": "Scratch",
+  "team": "M.MANIDEEP, M.HASHWANTH, P.SHIVA SAI",
+  "judge_name": "11"
+ },
+ "SCR-04": {
+  "project_name": "PARIVAAR | Pollution Warriors ? Protect Our Planet",
+  "category": "Scratch",
+  "team": "RANI, SIMRATJIT, SUMITA, DIPALI, SHARANJIT",
+  "judge_name": "11"
+ },
+ "SCR-05": {
+  "project_name": "Waste Sorting Game",
+  "category": "Scratch",
+  "team": "KETHAVATH AKHIL, PATHALAVATH GOUTHAM, NENAVATH RAMCHARAN, NENAVATH UDAYKIRAN",
+  "judge_name": "12"
+ },
+ "SCR-06": {
+  "project_name": "Cyber Security Agent",
+  "category": "Scratch",
+  "team": "PRANITI HANUMANT BALGHARE, SARTHAK RAVI PAWAR",
+  "judge_name": "12"
+ },
+ "SCR-07": {
+  "project_name": "PARIVAAR | Every Drop Counts: Save Drinking Water",
+  "category": "Scratch",
+  "team": "SANDIP HALDER, CHITTA SABAR, RUPAM MONDAL, BIJOY SING, JAYDIP GAYEN",
+  "judge_name": "12"
+ },
+ "SCR-08": {
+  "project_name": "Fire Safety and Prevention: Rural and Urban Action Plan",
+  "category": "Scratch",
+  "team": "ASANTI DAWAR, SITA EVNEY, MEENA BARELA, PUJA BARDE, RAGINI PAWAR",
+  "judge_name": "13"
+ },
+ "SCR-09": {
+  "project_name": "Tic-Tac-Toe Game",
+  "category": "Scratch",
+  "team": "NESARA KHAN",
+  "judge_name": "13"
+ },
+ "SCR-10": {
+  "project_name": "SpiderFloat Car Cover (bell spider)",
+  "category": "Scratch",
+  "team": "SRUTHI, HARI PRASAD, TEJAS",
+  "judge_name": "13"
+ },
+ "SCR-11": {
+  "project_name": "Rainwater Harvesting: Saving Every Drop for Tomorrow.",
+  "category": "Scratch",
+  "team": "KARTIK SEMARIYA, KANHAIYA CHOUHAN, GABRU ADIWASI, GYAN SINGH SOLANKI, LOKESH ALAWE",
+  "judge_name": "1"
+ },
+ "SCR-12": {
+  "project_name": "Click the Ballon Game",
+  "category": "Scratch",
+  "team": "VINAYAK RANSARJE, GAURI RANSARJE",
+  "judge_name": "1"
+ },
+ "SCR-13": {
+  "project_name": "Mario - But on Scratch",
+  "category": "Scratch",
+  "team": "DESHNA",
+  "judge_name": "1"
+ },
+ "SCR-14": {
+  "project_name": "Mega Game Mania",
+  "category": "Scratch",
+  "team": "SHASTHIKA. K",
+  "judge_name": "2"
+ },
+ "SCR-15": {
+  "project_name": "Math Speed",
+  "category": "Scratch",
+  "team": "SAISPANDAN PRUSTY, ROHAN KUMAR BEHERA, SATYAPRATIK BISWAL",
+  "judge_name": "2"
+ },
+ "SCR-16": {
+  "project_name": "The Sign Decoder",
+  "category": "Scratch",
+  "team": "RAMYA, SRINISHA, HARSHITHA, MOUNIKA",
+  "judge_name": "2"
+ },
+ "SCR-17": {
+  "project_name": "Garbage sorting Hero",
+  "category": "Scratch",
+  "team": "ANUPAMA SAHU",
+  "judge_name": "3"
+ },
+ "SCR-18": {
+  "project_name": "Leap Land",
+  "category": "Scratch",
+  "team": "DHANSHIKA K",
+  "judge_name": "3"
+ },
+ "SCR-19": {
+  "project_name": "HANDTALKER",
+  "category": "Scratch",
+  "team": "THARANI K, GABRIELLE, G VARSHA",
+  "judge_name": "3"
+ },
+ "SCR-20": {
+  "project_name": "MindMaze AI ? Scratch Adaptive Puzzle",
+  "category": "Scratch",
+  "team": "AALIYA, ASMAA, THAMIZHINI",
+  "judge_name": "4"
+ },
+ "SCR-21": {
+  "project_name": "Smart tree protection system",
+  "category": "Scratch",
+  "team": "SONALI SETHI",
+  "judge_name": "4"
+ },
+ "WEB-01": {
+  "project_name": "ResilienceNet",
+  "category": "Web",
+  "team": "TRIJAL RAJ",
+  "judge_name": "3"
+ },
+ "WEB-02": {
+  "project_name": "RESTAURANT HOME PAGE",
+  "category": "Web",
+  "team": "SANGI JEEVAN PAL, BODA MADHU, KANAKAM NANDEESHWAR",
+  "judge_name": "3"
+ },
+ "WEB-03": {
+  "project_name": "Growers gateway",
+  "category": "Web",
+  "team": "KAMBLE BHUJANG, WAGMARE ASHOK, ESLAVATH ANVESH",
+  "judge_name": "3"
+ },
+ "WEB-04": {
+  "project_name": "SP MOBILE SHOP WEBSITE",
+  "category": "Web",
+  "team": "SARTHAK",
+  "judge_name": "3"
+ },
+ "WEB-05": {
+  "project_name": "Learning Assistant using AI",
+  "category": "Web",
+  "team": "LAVUDYA NISHANATH, VISLAVATH GANESH, KATRAVATH SHIVAKUMAR, MUDAVATH MAHESH",
+  "judge_name": "4"
+ },
+ "WEB-06": {
+  "project_name": "Smart Study Dashboard",
+  "category": "Web",
+  "team": "YENUGULA GEETHIKA",
+  "judge_name": "4"
+ },
+ "WEB-07": {
+  "project_name": "A Responsive image Slider",
+  "category": "Web",
+  "team": "DODDE AMRUTHA VARSHINI, PONNALA NIHARIKA, GONELA INDHU, DODDI MANASVI, P.SAHASRINI",
+  "judge_name": "4"
+ },
+ "WEB-08": {
+  "project_name": "STUDENT MARKS REPORT TABLE",
+  "category": "Web",
+  "team": "D.MADHUPRIYA, R.KAVYA, A.KAVYASRI",
+  "judge_name": "4"
+ },
+ "WEB-09": {
+  "project_name": "TGSWRSJAGTIAL-SCHOOLSPHERE",
+  "category": "Web",
+  "team": "G.HARSHITHA, M.SNEHITHA, B.AKHILA, R.NAVASRI",
+  "judge_name": "5"
+ },
+ "WEB-10": {
+  "project_name": "Awaaz Student Complaint Box",
+  "category": "Web",
+  "team": "R NANDHINI, M SRUTHI",
+  "judge_name": "5"
+ },
+ "WEB-11": {
+  "project_name": "Wild Life Photography Website",
+  "category": "Web",
+  "team": "BANOTH BALAJI, BANOTH RAM MOHAN",
+  "judge_name": "5"
+ },
+ "WEB-12": {
+  "project_name": "Tribal Culture: Its diversity",
+  "category": "Web",
+  "team": "B SHARVIL MARY, M KEERTHANA, L MANISHA, K RAGHAVI, K AKSHITHA",
+  "judge_name": "6"
+ },
+ "WEB-13": {
+  "project_name": "Evolution of Technology",
+  "category": "Web",
+  "team": "J NIHARIKA, N BHANUPRIYA, Y AKSHITHA, K ASHWINI, B VIDHISHA",
+  "judge_name": "6"
+ },
+ "WEB-14": {
+  "project_name": "LockIN",
+  "category": "Web",
+  "team": "ANANTH KRISHNA",
+  "judge_name": "6"
+ },
+ "WEB-15": {
+  "project_name": "EduScan AI",
+  "category": "Web",
+  "team": "DIBYAJYOTI BEHERA, PRIYARANJAN SAHOO, ANSHUMAN SAHOO",
+  "judge_name": "7"
+ },
+ "WEB-16": {
+  "project_name": "Local Small Business Digital Ledger (Kirana Billing Helper)",
+  "category": "Web",
+  "team": "RENUKA, K. NIRMALA, TEJASHWINI, NEHA BEGU",
+  "judge_name": "7"
+ },
+ "WEB-17": {
+  "project_name": "Madhyamik Vidyalaya Website",
+  "category": "Web",
+  "team": "PRUTHVIRAJ",
+  "judge_name": "7"
+ },
+ "WEB-18": {
+  "project_name": "TTWRDC Alumni & Career Guidance Network",
+  "category": "Web",
+  "team": "K. SWAPNA, P. VINITHA, V. SHIREESHA, M. KAVERI",
+  "judge_name": "8"
+ },
+ "WEB-19": {
+  "project_name": "Art gallary website",
+  "category": "Web",
+  "team": "AJAY",
+  "judge_name": "8"
+ },
+ "WEB-20": {
+  "project_name": "Cyber Safety Guardian",
+  "category": "Web",
+  "team": "MALAPROLU DINESH, GUDA NEERAJ",
+  "judge_name": "8"
+ },
+ "WEB-21": {
+  "project_name": "Career Navigator",
+  "category": "Web",
+  "team": "ANAMIKA",
+  "judge_name": "9"
+ },
+ "WEB-22": {
+  "project_name": "Astitva- Widow Helping Website",
+  "category": "Web",
+  "team": "MAHINOOR",
+  "judge_name": "9"
+ },
+ "WEB-23": {
+  "project_name": "QuickTrolly",
+  "category": "Web",
+  "team": "KATROJ SAMPATH KUMAR, MALLAYALA SREEKAR, KAMBLE SUSHANTH",
+  "judge_name": "9"
+ },
+ "WEB-24": {
+  "project_name": "TaxoFlora: Next-Gen Web Platform for Botanical Mapping & Conservation",
+  "category": "Web",
+  "team": "B.ASHWINI, M.PRANITHA, B.AMMULU, V.RATHNA MOUNIKA",
+  "judge_name": "10"
+ },
+ "WEB-25": {
+  "project_name": "Mess Inventory Tracker",
+  "category": "Web",
+  "team": "P POOJITHA, V SHIREESHA, K NANDINI, A SRAVANTHI",
+  "judge_name": "10"
+ },
+ "WEB-26": {
+  "project_name": "Dots and Boxes",
+  "category": "Web",
+  "team": "SIDDHI KUMARI",
+  "judge_name": "10"
+ },
+ "WEB-27": {
+  "project_name": "Kaam Dhundo Job Portal",
+  "category": "Web",
+  "team": "VAISHNAVI",
+  "judge_name": "10"
+ },
+ "WEB-28": {
+  "project_name": "LAN Chat using RPi",
+  "category": "Web",
+  "team": "KHUSBU SHARMA",
+  "judge_name": "11"
+ },
+ "WEB-29": {
+  "project_name": "CODING AND COMPUTING LAB SPEAR",
+  "category": "Web",
+  "team": "POLICE POOJA, UMA DEVI, V MAHESWARI",
+  "judge_name": "11"
+ },
+ "WEB-30": {
+  "project_name": "Tourism in the world",
+  "category": "Web",
+  "team": "B.AKSHARA, P. RADHIKA, T. SAMPOORNA",
+  "judge_name": "11"
+ },
+ "WEB-31": {
+  "project_name": "NeuroQuest",
+  "category": "Web",
+  "team": "SRIVASAN M",
+  "judge_name": "11"
+ },
+ "WEB-32": {
+  "project_name": "HOME FOODS HTML PROJECT.",
+  "category": "Web",
+  "team": "MALLEPANGA SHRUTHI SHARON, MUSKU RACHANA, BADDEPURI SANJANA, GUGULOTH SRIJA, ENUMULA RAKSHITHA",
+  "judge_name": "12"
+ },
+ "WEB-33": {
+  "project_name": "School library management system",
+  "category": "Web",
+  "team": "R RITHU, K LAVANYA, B GAYATHRI, R PUSHPA, K VAISHALI",
+  "judge_name": "12"
+ },
+ "WEB-34": {
+  "project_name": "District Student Grievance Portal",
+  "category": "Web",
+  "team": "SUSHMITHA JATOTH, SHIVANYA SHANIGARAM, V LASYA",
+  "judge_name": "12"
+ },
+ "WEB-35": {
+  "project_name": "Sutra",
+  "category": "Web",
+  "team": "SONALI BARIK",
+  "judge_name": "12"
+ },
+ "WEB-36": {
+  "project_name": "Skill path X",
+  "category": "Web",
+  "team": "GADDAMEDI ARJUN, RATHOD NAVEEN",
+  "judge_name": "13"
+ },
+ "WEB-37": {
+  "project_name": "Judox",
+  "category": "Web",
+  "team": "PRAGYAN PRIYADARSHANI",
+  "judge_name": "13"
+ },
+ "WEB-38": {
+  "project_name": "Nearby petrol bunk finder using html",
+  "category": "Web",
+  "team": "PUCHAKKUNTLA VENKATESH, YELUGU SANDEEP SARKAR, SABAVATH SRIKANTH, KETHAVATH JAGAN",
+  "judge_name": "13"
+ },
+ "WEB-39": {
+  "project_name": "Lk cake shop website",
+  "category": "Web",
+  "team": "LOBHAS",
+  "judge_name": "13"
+ }
+}
