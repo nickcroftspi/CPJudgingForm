@@ -33,10 +33,45 @@ var FIELDS = ['desk_no', 'project_name', 'category', 'team', 'judge_name',
 var NUMERIC_FIELDS = ['coolness', 'complexity', 'presentation', 'design'];
 
 function doPost(e) {
+  var params = (e && e.parameter) || {};
+  var submissionId = String(params.submission_id || '');
+
+  // Work that does not need serialising happens BEFORE taking the lock. Opening the
+  // spreadsheet takes a second or two, and holding the lock across it made ten
+  // concurrent submissions take 38-68s each. Google stops returning the response body
+  // (you get a 404 page instead) once an execution runs that long, so the write
+  // succeeded but the judge's browser could not read the confirmation.
+
+  // Cheap short-circuit for an obvious retry. This is only an optimisation: the
+  // authoritative check happens again inside the lock, because two retries arriving
+  // together could both pass this one.
+  if (submissionId && alreadyRecorded(submissionId)) {
+    return jsonOut({ result: 'success', duplicate: true });
+  }
+
+  var sheet;
+  try {
+    sheet = SpreadsheetApp.openById(SPREADSHEET_ID).getSheetByName(SHEET_NAME);
+  } catch (err) {
+    return jsonOut({ result: 'error', message: String(err && err.message || err) });
+  }
+  if (!sheet) {
+    return jsonOut({ result: 'error', message: 'Sheet "' + SHEET_NAME + '" not found' });
+  }
+
+  var row = FIELDS.map(function (field) {
+    var value = params[field] === undefined ? '' : params[field];
+    if (NUMERIC_FIELDS.indexOf(field) !== -1 && value !== '') {
+      var number = Number(value);
+      return isNaN(number) ? value : number;
+    }
+    return value;
+  });
+
   var lock = LockService.getScriptLock();
 
-  // Wait rather than fail: a submission takes well under a second once it holds
-  // the lock, so a queue of judges drains quickly.
+  // Wait rather than fail: the locked section is one append, so a queue of judges
+  // drains quickly.
   try {
     lock.waitLock(45000);
   } catch (err) {
@@ -45,27 +80,11 @@ function doPost(e) {
   }
 
   try {
-    var params = (e && e.parameter) || {};
-    var submissionId = String(params.submission_id || '');
-
+    // Authoritative duplicate check, inside the lock so that check-then-append is
+    // atomic with respect to other submissions.
     if (submissionId && alreadyRecorded(submissionId)) {
-      // A retry of something we already wrote. Report success without duplicating.
       return jsonOut({ result: 'success', duplicate: true });
     }
-
-    var sheet = SpreadsheetApp.openById(SPREADSHEET_ID).getSheetByName(SHEET_NAME);
-    if (!sheet) {
-      return jsonOut({ result: 'error', message: 'Sheet "' + SHEET_NAME + '" not found' });
-    }
-
-    var row = FIELDS.map(function (field) {
-      var value = params[field] === undefined ? '' : params[field];
-      if (NUMERIC_FIELDS.indexOf(field) !== -1 && value !== '') {
-        var number = Number(value);
-        return isNaN(number) ? value : number;
-      }
-      return value;
-    });
 
     row.push(Utilities.formatDate(new Date(),
                                   Session.getScriptTimeZone(),
