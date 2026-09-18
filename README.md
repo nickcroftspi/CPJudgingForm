@@ -37,6 +37,21 @@ The only network call during judging is the one that saves a score.
 Copy the data out of `Sheet1` of rpf.io/judging-scores and save it elsewhere. That
 sheet gets cleared for the next event.
 
+## Where the Apps Script actually lives
+
+Beware the naming: **the spreadsheet titled "Judging Data" is the scores sheet**
+(rpf.io/judging-scores), not the input sheet.
+
+The collector is a *container-bound* script inside that scores spreadsheet, so it does
+not appear as its own file in Drive. Reach it with `Extensions > Apps Script` from
+rpf.io/judging-scores, or directly:
+
+<https://script.google.com/u/0/home/projects/1IHCpJWP6mTO0IJrsfLWOJRAOcADatq-K6iDUpt0HVhDJe1lF5ZpfQA0Q/edit>
+
+Its web app deployment id starts `AKfycbyfv2wLV2dZI97p9`, which must match `SUBMIT_URL`
+in `index.html`. Check that under `Deploy > Manage deployments` before pasting anything,
+because the input spreadsheet has a bound script too and the two are easy to confuse.
+
 ## Deploying a change to the Apps Script
 
 Paste the new contents over the whole script, then:
@@ -73,3 +88,7 @@ against it: all ten received `{"result":"success"}` but only three rows reached 
 sheet, because concurrent executions each read the same last-row position and
 overwrote one another. `apps-script/Code.gs` fixes that with `LockService` and
 `appendRow`.
+
+Measured against the deployed fix, same ten-concurrent test: 10 of 10 rows reached the
+sheet, all ten responses were readable (no 404s), slowest was 27s, and three retries
+sharing one `submission_id` produced exactly one row.
